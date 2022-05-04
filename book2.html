@@ -1,1 +1,30 @@
-book2.html  test4.txt
+<!DOCTYPE html>
+<html>
+<head>
+    <title>factory function</title>
+    <script type="text/javascript">
+        function compined (firstname,secondname){
+            return{
+                firstname,
+                secondname,
+                fullname : function(){
+                    return("your name is not" + " " + firstname + " " +secondname)
+                },
+            }
+        }
+let identity1 =  compined("john", "doe")
+let identity2 =  compined("jane", "doe")
+document.write(identity1.fullname() )
+document.write ("<br />")
+ document.write(identity2.fullname() )
+ 
+
+
+
+        
+    </script>
+</head>
+<body>
+
+</body>
+</html>
